@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import {
   FaGithub,
   FaLinkedin,
@@ -193,7 +195,15 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold" style={{ background: 'red' }}>{item.company} ... <span>Location</span></p>
+                              <p className="content i-bold">
+                                {item.company} 
+                                {item.location && item.location !== "" ? (
+                                <span style={{ float: 'right', fontWeight: 'normal' }}>
+                                 <span style={{float: 'left',  width: '12px' }}> <FontAwesomeIcon icon={faMapMarkerAlt} size="md"/></span>
+                                 <span> &nbsp;{item.location}</span>
+                                </span>
+                                ) : null}
+                              </p>
                               <p className="content">{item.position}</p>
                               <DateRange
                                 startYear={item.startYear}

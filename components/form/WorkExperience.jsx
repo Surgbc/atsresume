@@ -21,6 +21,7 @@ const WorkExperience = () => {
         ...resumeData.workExperience,
         {
           company: "",
+          location: "",
           position: "",
           description: "",
           keyAchievements: "",
@@ -49,6 +50,14 @@ const WorkExperience = () => {
             name="company"
             className="w-full other-input"
             value={workExperience.company}
+            onChange={(e) => handleWorkExperience(e, index)}
+          /> 
+          <input
+            type="text"
+            placeholder="Location"
+            name="location"
+            className="w-full other-input"
+            value={workExperience.location}
             onChange={(e) => handleWorkExperience(e, index)}
           />
           <input
