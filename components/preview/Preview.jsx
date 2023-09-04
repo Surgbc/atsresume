@@ -193,7 +193,7 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold">{item.company}</p>
+                              <p className="content i-bold" style={{ background: 'red' }}>{item.company} ... <span>Location</span></p>
                               <p className="content">{item.position}</p>
                               <DateRange
                                 startYear={item.startYear}
@@ -359,7 +359,7 @@ const Preview = () => {
                     </h2>
                     {resumeData.achievements.map((item, index) => (
                       <div key={index} className="mb-1">
-                        <p className="content">{item}</p>
+                        <p className="content">• {item}</p>
                       </div>
                     ))}
                   </div>
