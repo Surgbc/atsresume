@@ -12,6 +12,7 @@ import PersonalInformation from "../components/form/PersonalInformation";
 import Summary from "../components/form/Summary";
 import Projects from "../components/form/Projects";
 import Education from "../components/form/Education";
+import Achievements from "../components/form/Achievements";
 import dynamic from "next/dynamic";
 import Certification from "../components/form/certification";
 
@@ -71,6 +72,7 @@ export default function Builder(props) {
               <PersonalInformation />
               <SocialMedia />
               <Summary />
+              <Achievements />
               <Education />
               <WorkExperience />
               <Projects />

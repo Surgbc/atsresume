@@ -20,6 +20,9 @@ const DefaultResumeData = {
     },
   ],
   summary: "Resourceful Developer with 11 years of experience in designing and developing user interfaces, testing and training employees. Skilled at utilizing a wide variety of tools and programs to provide effective applications.",
+  achievements: [
+         "Built a Resume Generator using React, Next.js, Tailwind CSS, and Vercel.",
+  ],
   education: [
     {
       "school": "Bachelor of Computer Science",
